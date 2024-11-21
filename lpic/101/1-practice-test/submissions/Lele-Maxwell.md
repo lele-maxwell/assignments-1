@@ -144,26 +144,43 @@ example
 
  **Part 1**
 1: journalctl
+
 2:  /etc/resolv.conf.
+
 3: password age
+
 4:ServerName
+
 5:ans  ::1
+
 6: -R
+
 7: LD_LIBRARY_PATH
+
 8: systemctl stop sshd
+
 9: ip route command 
+
 10: /var/spool/cron/crontabs
 
 **part 2**
 11: C
+
 12: C
+
 13: C
+
 14: B
+
 15: C
 16: B
+
 17: B
+
 18: A
+
 19: B
+
 20:B
 
 **Part 2**
