@@ -1,4 +1,5 @@
 **1**: B
+
 **2**:
 Here are the difference between BIOS and UEFI
 - The BIOS is an older version firmware in computers while the UEFI is a
@@ -18,6 +19,7 @@ Here are the difference between BIOS and UEFI
   ..syntax: modprobe <module-name>
   ..for a module calles dummy the command id as follow
     modprobe dummy
+
   **4**:
   * /proc :This is a directory that contains information about system processes
     and hard ware .It holds settings and properties for the kernel
@@ -25,9 +27,11 @@ Here are the difference between BIOS and UEFI
     provides the kernel properties,hardwares devices amd device drivers
 
     **SECTION 2**
-    **5**
+
+     **5**
     * C:apt install package
-    **6**
+
+     **6**
       Diffences between apt and dpkg
       * apt is an advance package manger while dpkg is an older pakage manager
       * apt is a high level as compared to dpkg which is a low-level package manager
@@ -46,8 +50,10 @@ Here are the difference between BIOS and UEFI
 
       **9**:
       B:tail
+    
       **10**:
       > cat /var/log/syslog | grep error | wc -l
+    
       **11**:
       Diferrences between hard and soft link
       - hard links can't point accross different file system while a soft
@@ -59,9 +65,11 @@ Here are the difference between BIOS and UEFI
       - they are also different in syntax when creating
         ...hard link: ln <source-file> <link>
         ...soft link: ln -s <source-file> <link>
-      **12**:
+
+       **12**:
         > find /etc/*.conf -mtime 7 -daystart
-      **13**:
+
+       **13**:
         **Cron**:
         The cron daemon is abackground job that runs autamatically without
         forcefully the intervention human.it used in scheduling jobs to
@@ -79,7 +87,8 @@ Here are the difference between BIOS and UEFI
 
   **14**:
   B:Disk usage in human-readable format
-  **15**
+
+   **15**
   The UUID fiilesytem
    > cat /etc/fstab | cut -d ' ' -f 1 | grep UUID
 
@@ -133,5 +142,43 @@ example
  When the computer is turned on the system performs a POST (power on self test) and then the bootloader loads the kernal and initramfs from the  and the firmware loads the first stage of bootloader which the boot sector ( the first 512bits) and the second stage which loads the kernel the initramfs is used as a temporary filesystem which is used for the initialization of the kernel
  After these processes,the startup script is initialised
 
- 
+ **Part 1**
+1: journalctl
+2:  /etc/resolv.conf.
+3: password age
+4:ServerName
+5:ans  ::1
+6: -R
+7: LD_LIBRARY_PATH
+8: systemctl stop sshd
+9: ip route command 
+10: /var/spool/cron/crontabs
+
+**part 2**
+11: C
+12: C
+13: C
+14: B
+15: C
+16: B
+17: B
+18: A
+19: B
+20:B
+
+**Part 2**
+21:
+0  2   5  *  *     date > bakup.sh
+22:
+Hard links point to thesame inode as the original file while soft link has another inode to every soft link created  this makes hardlinks   less space consumming as compared to softlinks and also soft links can be creted across different file system  whereas hard links can't 
+23:
+
+24:
+find /home/user -type f exec chmod 644 {} \ ;  -o -type d -exec chmod 755 {} \;
+25:
+The purpose of the /etc/nsswitch.conf id to determind how the system resolves hostnames to ip addresses ,username  to user ids ,group name to gid and pasword authentification
+26:
+
+27:
+iptables is a high level firewall management system while ufw is a low-level firewall management system 
     
