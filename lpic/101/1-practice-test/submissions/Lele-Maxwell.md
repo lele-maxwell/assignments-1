@@ -173,6 +173,7 @@ example
 14: B
 
 15: C
+
 16: B
 
 17: B
@@ -186,14 +187,17 @@ example
 **Part 2**
 21:
 0  2   5  *  *     date > bakup.sh
+
 22:
 Hard links point to thesame inode as the original file while soft link has another inode to every soft link created  this makes hardlinks   less space consumming as compared to softlinks and also soft links can be creted across different file system  whereas hard links can't 
 23:
 
 24:
 find /home/user -type f exec chmod 644 {} \ ;  -o -type d -exec chmod 755 {} \;
+
 25:
 The purpose of the /etc/nsswitch.conf id to determind how the system resolves hostnames to ip addresses ,username  to user ids ,group name to gid and pasword authentification
+
 26:
 
 27:
